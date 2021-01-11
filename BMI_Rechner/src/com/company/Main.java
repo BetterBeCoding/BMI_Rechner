@@ -33,6 +33,7 @@ public class Main {
         bodyWeight = scanny.nextDouble();
         System.out.println("Bitte geben sie ihre Größe in Meter an");
         bodyHeight = scanny.nextDouble();
+        scanny.close();
         bodyMassIndex = bodyWeight/(bodyHeight*bodyHeight);
         System.out.println("Ihr Body Mass Index (BMI) :  " + f.format(bodyMassIndex) );
                 if (bodyMassIndex <16) {
